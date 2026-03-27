@@ -7,7 +7,7 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-amber-100  w-full">
+    <header className="bg-amber-100  w-full  border-amber-900 border-b-2">
       <div className="flex max-w-7xl mx-auto p-4 justify-between">
         {/*LOGO*/}
         <div className="text-amber-950">
