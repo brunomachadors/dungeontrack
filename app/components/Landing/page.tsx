@@ -4,8 +4,8 @@ import HeroSection from '../Sections/Hero/page';
 
 function LandingPage() {
   return (
-    <main>
-      <div className="flex h-screen flex-col w-full">
+    <main className="page-shell">
+      <div className="flex min-h-screen w-full flex-col">
         <HeroSection />
         <AboutSection />
         <FeaturesSection />

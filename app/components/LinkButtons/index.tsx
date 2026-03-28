@@ -7,7 +7,8 @@ function LinkButton({ href, text, external = false }: LinkButtonProps) {
     <Link
       href={href}
       target={external ? '_blank' : undefined}
-      className=" text-amber-100 hover:text-amber-950 hover:bg-amber-100 p-2 border rounded "
+      rel={external ? 'noreferrer noopener' : undefined}
+      className="footer-link rounded-full border border-amber-100/30 px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em] text-amber-100 hover:border-amber-100/70 hover:bg-amber-50/10"
     >
       {text}
     </Link>
