@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: 'DungeonTrack',
   description:
     'Gerencie campanhas de RPG, personagens e sessões em uma jornada organizada.',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
