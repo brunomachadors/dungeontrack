@@ -77,7 +77,7 @@ function HeroSection() {
 
           <div className="mt-7 text-center">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-stone-700/30 bg-amber-50/50">
-              <div className="wax-badge flex h-16 w-16 items-center justify-center text-2xl text-[#f7ead0]">
+              <div className="wax-badge flex h-16 w-16 items-center justify-center text-5xl text-[#f7ead0]">
                 ⚔
               </div>
             </div>
