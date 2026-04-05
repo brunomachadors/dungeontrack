@@ -1,5 +1,7 @@
-import { SignInButton, SignOutButton, SignUpButton } from '@clerk/nextjs';
+import { SignOutButton } from '@clerk/nextjs';
 import Link from 'next/link';
+import SignInAction from '../auth/SignInAction';
+import SignUpAction from '../auth/SignUpAction';
 import PublicNavigation from './PublicNavigation';
 
 type MobileMenuProps = {
@@ -14,24 +16,16 @@ function MobileMenu({ isSignedIn, onClose }: MobileMenuProps) {
         {!isSignedIn ? (
           <>
             <PublicNavigation onNavigate={onClose} />
-            <SignInButton mode="modal" forceRedirectUrl="/dashboard">
-              <button
-                type="button"
-                className="font-display text-sm uppercase tracking-[0.14em] text-stone-700"
-                onClick={onClose}
-              >
-                Entrar
-              </button>
-            </SignInButton>
-            <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
-              <button
-                type="button"
-                className="font-display text-sm uppercase tracking-[0.14em] text-stone-700"
-                onClick={onClose}
-              >
-                Criar Conta
-              </button>
-            </SignUpButton>
+            <SignInAction
+              className="text-sm uppercase tracking-[0.14em] text-stone-700"
+            >
+              Entrar
+            </SignInAction>
+            <SignUpAction
+              className="text-sm uppercase tracking-[0.14em] text-amber-100"
+            >
+              Criar Conta
+            </SignUpAction>
           </>
         ) : (
           <>

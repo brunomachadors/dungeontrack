@@ -1,3 +1,4 @@
+import SignUpAction from '../../auth/SignUpAction';
 import ActionLink from '../../ui/ActionLink';
 import NoticeCard from '../../ui/NoticeCard';
 import SectionContainer from '../../ui/SectionContainer';
@@ -26,7 +27,7 @@ function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <ActionLink href="/sign-in">Recrutar meu grupo</ActionLink>
+            <SignUpAction>Recrutar meu grupo</SignUpAction>
             <ActionLink href="#recursos" variant="secondary">
               Explorar recursos
             </ActionLink>
@@ -77,7 +78,7 @@ function HeroSection() {
 
           <div className="mt-7 text-center">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-stone-700/30 bg-amber-50/50">
-              <div className="wax-badge flex h-16 w-16 items-center justify-center text-2xl text-[#f7ead0]">
+              <div className="wax-badge flex h-16 w-16 items-center justify-center text-5xl text-[#f7ead0]">
                 ⚔
               </div>
             </div>
@@ -99,7 +100,10 @@ function HeroSection() {
               </p>
             </NoticeCard>
 
-            <NoticeCard eyebrow="Recompensa" className="rounded-[20px] px-5 py-4">
+            <NoticeCard
+              eyebrow="Recompensa"
+              className="rounded-[20px] px-5 py-4"
+            >
               <p>
                 Mais tempo jogando, menos tempo procurando papeis soltos e notas
                 espalhadas.

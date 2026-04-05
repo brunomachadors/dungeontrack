@@ -1,21 +1,11 @@
-import { SignInButton, SignUpButton } from '@clerk/nextjs';
-
-const secondaryButtonClass = 'ink-button ink-button-secondary px-5 py-3 text-xs';
-const primaryButtonClass = 'ink-button ink-button-primary px-5 py-3 text-xs';
+import SignInAction from '../auth/SignInAction';
+import SignUpAction from '../auth/SignUpAction';
 
 function PublicAuthActions() {
   return (
     <>
-      <SignInButton mode="modal" forceRedirectUrl="/dashboard">
-        <button type="button" className={secondaryButtonClass}>
-          Entrar
-        </button>
-      </SignInButton>
-      <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
-        <button type="button" className={primaryButtonClass}>
-          Criar Conta
-        </button>
-      </SignUpButton>
+      <SignInAction className="px-5 py-3 text-xs">Entrar</SignInAction>
+      <SignUpAction className="px-5 py-3 text-xs">Criar Conta</SignUpAction>
     </>
   );
 }

@@ -15,7 +15,6 @@ function LandingFooterNavigation() {
           text="GitHub"
           external
         />
-        <LinkButton href="/" text="Inicio" />
       </section>
     </>
   );
