@@ -1,6 +1,6 @@
-import AboutSection from '../Sections/About/page';
-import FeaturesSection from '../Sections/Features/page';
-import HeroSection from '../Sections/Hero/page';
+import AboutSection from '../sections/About';
+import FeaturesSection from '../sections/Features';
+import HeroSection from '../sections/Hero';
 
 function LandingPage() {
   return (

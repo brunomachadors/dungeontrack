@@ -8,8 +8,8 @@ function HeroSection() {
       id="jornada"
       className="section-frame relative isolate flex min-h-[calc(100vh-88px)] items-center px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="hero-glow -left-32 top-20" />
-      <div className="hero-glow bottom-0 -right-28" />
+      <div className="hero-glow left-[-8rem] top-20" />
+      <div className="hero-glow bottom-0 right-[-7rem]" />
 
       <SectionContainer className="grid w-full items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="paper-panel texture-dots rounded-[28px] px-7 py-10 sm:px-10 sm:py-12 lg:px-12">
@@ -77,7 +77,7 @@ function HeroSection() {
 
           <div className="mt-7 text-center">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-stone-700/30 bg-amber-50/50">
-              <div className="wax-badge flex h-16 w-16 items-center justify-center text-5xl text-[#f7ead0]">
+              <div className="wax-badge flex h-16 w-16 items-center justify-center text-2xl text-[#f7ead0]">
                 ⚔
               </div>
             </div>
@@ -99,10 +99,7 @@ function HeroSection() {
               </p>
             </NoticeCard>
 
-            <NoticeCard
-              eyebrow="Recompensa"
-              className="rounded-[20px] px-5 py-4"
-            >
+            <NoticeCard eyebrow="Recompensa" className="rounded-[20px] px-5 py-4">
               <p>
                 Mais tempo jogando, menos tempo procurando papeis soltos e notas
                 espalhadas.

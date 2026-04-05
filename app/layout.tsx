@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import { ClerkProvider } from '@clerk/nextjs';
 import { Cinzel, Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
+import { clerkAppearance } from './config/clerkAppearance';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -35,9 +37,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${bodyFont.variable} ${displayFont.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <ClerkProvider appearance={clerkAppearance}>
+          <Header />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </ClerkProvider>
       </body>
     </html>
   );
