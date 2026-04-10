@@ -1,3 +1,4 @@
+import SignUpAction from '../../auth/SignUpAction';
 import ActionLink from '../../ui/ActionLink';
 import NoticeCard from '../../ui/NoticeCard';
 import SectionContainer from '../../ui/SectionContainer';
@@ -8,8 +9,8 @@ function HeroSection() {
       id="jornada"
       className="section-frame relative isolate flex min-h-[calc(100vh-88px)] items-center px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="hero-glow -left-32 top-20" />
-      <div className="hero-glow bottom-0 -right-28" />
+      <div className="hero-glow left-[-8rem] top-20" />
+      <div className="hero-glow bottom-0 right-[-7rem]" />
 
       <SectionContainer className="grid w-full items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="paper-panel texture-dots rounded-[28px] px-7 py-10 sm:px-10 sm:py-12 lg:px-12">
@@ -26,7 +27,7 @@ function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <ActionLink href="/sign-in">Recrutar meu grupo</ActionLink>
+            <SignUpAction>Recrutar meu grupo</SignUpAction>
             <ActionLink href="#recursos" variant="secondary">
               Explorar recursos
             </ActionLink>

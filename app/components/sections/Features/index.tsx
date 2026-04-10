@@ -1,4 +1,5 @@
 import ActionLink from '../../ui/ActionLink';
+import SignUpAction from '../../auth/SignUpAction';
 import NoticeCard from '../../ui/NoticeCard';
 import SectionContainer from '../../ui/SectionContainer';
 import SectionHeading from '../../ui/SectionHeading';
@@ -68,9 +69,9 @@ function FeaturesSection() {
                 Se a ideia e criar um sistema acolhedor para RPGistas, a landing
                 agora ja comunica isso com mais personalidade e contexto.
               </p>
-              <ActionLink href="/sign-in" className="mt-5">
+              <SignUpAction className="mt-5">
                 Comecar aventura
-              </ActionLink>
+              </SignUpAction>
             </NoticeCard>
           </div>
         </div>
