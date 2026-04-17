@@ -10,7 +10,7 @@ export default async function DashboardPage() {
   }
 
   const user = await currentUser();
-  const firstName = user?.firstName || user?.username || 'Aventureiro';
+  const firstName = user?.firstName || user?.username || "";
   const email = user?.emailAddresses[0]?.emailAddress;
 
   return (
@@ -21,7 +21,7 @@ export default async function DashboardPage() {
             Sala do aventureiro
           </p>
           <h1 className="font-display mt-4 text-4xl font-bold text-stone-900 sm:text-5xl">
-            Bem-vindo, {firstName}.
+            Bem-vindo{firstName && ` ${firstName}`}.
           </h1>
           <p className="mt-5 max-w-3xl text-xl leading-relaxed text-stone-700">
             Seu acesso com Clerk esta funcionando e a area autenticada ja esta
