@@ -1,5 +1,6 @@
 import { auth, currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
+import RegisterUserOnDashboard from '../components/auth/RegisterUserOnDashboard';
 import SectionContainer from '../components/ui/SectionContainer';
 
 export default async function DashboardPage() {
@@ -15,6 +16,7 @@ export default async function DashboardPage() {
 
   return (
     <main className="page-shell px-6 py-16 md:px-10 lg:px-16">
+      <RegisterUserOnDashboard />
       <SectionContainer>
         <section className="paper-panel rounded-[30px] px-7 py-10 sm:px-10 sm:py-12">
           <p className="font-display section-title text-sm font-semibold text-red-800">
